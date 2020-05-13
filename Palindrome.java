@@ -28,7 +28,19 @@ public class Palindrome {
 			String rev = new StringBuffer(input1).reverse().toString();
 			System.out.println(input1.equals(rev)?"Yes Palindrome":"Not a Palindrome");
 			
-	
+	//Method 3 :
+			
+			String input2 = "malayalam";
+			List<String> test3 = new ArrayList<String>();
+			test3.add(input2);
+			List<String> test2 = new ArrayList<String>();
+			test2.add(input2);
+			Collections.reverse(test2);
+			if (test2.equals(test3)) {
+				System.out.println("Yes Palindrome");
+			} else {
+				System.out.println("No not a Palindrome");
+			}
 
 	}
 
